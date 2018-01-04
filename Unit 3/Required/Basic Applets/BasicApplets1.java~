@@ -1,0 +1,34 @@
+//File: BasicApplets1.java
+//Author: Pronoy Chaudhuri
+//Date: April 22nd, 2015
+//Description: The basics to applets!
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.Applet;
+public class BasicApplets1 extends Applet implements ActionListener
+{
+  JLabel unscramble;
+  
+  public void init ()
+  {
+    JLabel title = new JLabel ("Unscramble!");
+    title.setFont (new JLabel ("Ravie", Font.BOLD, 30));
+    add (title);
+    
+    JLabel subtitle = new JLabel ("Enter the unscrambled word. Press done to check.");
+    subtitle.setFont (new JLabel ("Arial", Font.BOLD, 14));
+    add (subtitle);
+    
+    JLabel pass = new JLabel ("ertpuocm");
+    pass.setFont (new JLabel ("Arial", Font.BOLD, 20));
+    
+    JTextField field = new JTextField ("");
+    add (pass);
+        
+    JButton b1 = new Button ("Done");
+    b1.addActionListener (this);
+    b1.setActionCommand {"check");
+    add (b1);
+
+    

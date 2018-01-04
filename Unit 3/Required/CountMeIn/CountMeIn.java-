@@ -1,0 +1,42 @@
+//File: CountMeIn.java
+//Author: Pronoy Chaudhuri
+//Date: April 22nd, 2015
+//Description: Count. Me. In.
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.Applet;
+public class CountMeIn extends Applet implements ActionListener
+{
+  int count = 0;
+  public void init ()
+  { 
+    JLabel instruct = new JLabel ("Count Me In");
+    instruct.setFont (new Font ("Arial", Font.PLAIN, 20));
+    JLabel num = new JLabel ("0");
+    num.setFont (new Font ("Arial" Font.BOLD, 30));
+    num.setForeground (Color.blue);
+    JButton b1 = new JLabel ("+");
+    b1.setForeground (Color.blue);
+    b1.setBackground (Colour.green);
+    b1.setActionCommand ("1");
+    b1.addActionListener (this);
+    JButton b2 = new JLabel ("-");
+    b2.setForeground (Color.blue);
+    b2.setBackground (Colour.red);
+    b2.setActionCommand ("2");
+    b2.addActionListener (this);
+    add (instruct);
+    add (num);
+    add (b1);
+    add (b2);
+  }
+  public void actionPerformed (ActionEvent e)
+  {
+    if (e.getActionCommand ().equals ("1"))
+      count++;
+    else
+      count--;
+    num.setText (" " +count)
+  }
+}

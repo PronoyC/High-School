@@ -1,0 +1,96 @@
+//File: HighRoller.java
+//Author: Pronoy Chaudhuri
+//Date: April 22nd, 2015
+//Description: All you need is a bit of luck!
+import java.awt.*; 
+import java.awt.event.*; 
+import javax.swing.*; 
+import java.applet.*;
+
+public class HighRoller extends Applet implements ActionListener
+{
+  JButton bmine, next, bcomp;
+  JLabel action, score, pic, pic2;
+  int dice1 = 0, dice2=0, cscore=0, uscore=0;
+  
+  public void init ()
+  {
+    JLabel title = new JLabel ("High Roller");
+    title.setFont (new Font ("Arial", Font.BOLD, 40));
+    title.setForeground (Color.red);
+    JLabel words = new JLabel ("You roll. The computer rolls. ");
+    JLabel morewords = new JLabel ("Higher roll wins.");
+    JLabel mine = new JLabel ("Your dice");
+    mine.setFont (new Font ("Arial", Font.BOLD, 18));
+    JLabel comp = new JLabel ("Comp dice");
+    comp.setFont (new Font ("Arial", Font.BOLD, 18));
+    pic = new JLabel (createImageIcon ("blank.gif"));
+    pic2 = new JLabel (createImageIcon ("blank.gif"));
+    bmine = new JButton ("ROLL Mine");
+    bmine.setActionCommand ("1");
+    bmine.addActionListener (this);
+    bcomp = new JButton ("ROLL Comp");
+    bcomp.setActionCommand ("2");
+    bcomp.addActionListener (this);
+    bcomp.setEnabled (false);
+    next = new JButton ("Play again.");
+    next.setActionCommand ("3");
+    next.addActionListener (this);
+    next.setEnabled (false);
+    action = new JLabel ("Roll your dice to begin.");
+    action.setFont (new Font ("Arial", Font.BOLD, 18));
+    score = new JLabel ("Score: You _____, Computer ____ ");
+    add (title);
+    add (words);
+    add (morewords);
+    Panel p = new Panel ();
+    p.add (mine);
+    p.add (pic);
+    p.add (bmine);
+    p.setBackground (Color.green);
+    add (p);
+    Panel p2 = new Panel ();
+    p2.add (comp);
+    p2.add (pic2);
+    p2.add (bcomp);
+    p2.setBackground (Color.yellow);
+    add (p2);
+    add (action);
+    add (next);
+    add (score);
+    resize (300, 380);
+  }
+  public void actionPerformed (ActionEvent e)
+  {
+    if (e.getActionCommand ().equals ("1"))
+    {
+      
+    }
+    else if (e.getActionCommand ().equals ("2"))
+    {
+      
+      if (dice1 == dice2)
+        else if (dice1 > dice2)
+      {
+        
+      }
+      else
+      {
+        
+      }
+      
+    }
+    else // e.getActionCommand ().equals ("3")
+    {
+      
+    }
+  }
+  protected static ImageIcon createImageIcon (String path)
+  { java.net.URL imgURL = HighRoller.class.getResource (path);
+    if (imgURL != null)
+      return new ImageIcon (imgURL);
+    else
+    { System.err.println ("Couldn't find file: " + path); return null;
+    }
+  }
+}

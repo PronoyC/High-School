@@ -1,0 +1,26 @@
+//File: MillieMuffins.java
+//Author: Pronoy Chaudhuri
+//Date: February 10th, 2015
+//Description: A way to find out how much you should pay for muffins.
+public class MillieMuffins
+{
+ public static void main (String args[])
+ {
+ new MillieMuffins ();
+ }
+ public MillieMuffins ()
+ {
+   System.out.println ("Welcome to Millie’s Marvelous Muffins!" \n "**If you like muffins, ours are marvelous!**");
+   int muff = IBIO.inputInt ("How many muffins would you like? ");
+   if (muff >= 1 || 9 >= muff)
+     int cost = 5
+   else if (muff >= 10 || 19 >= muff)
+     int cost = 3
+   else if (muff >= 20 || 39 >= muff)
+     int cost = 2
+   else if (muff >= 40)
+     int cost = 1
+   System.out.println ("The cost per muffin is $" /n +c+ "The total cost is" +(c*muff));
+ }
+}
+   

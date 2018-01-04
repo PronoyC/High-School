@@ -1,0 +1,28 @@
+//File: TextFieldPuzzles.java
+//Author: Pronoy Chaudhuri
+//Date: April 22nd, 2015
+//Description: Puzzles w/ text fields.
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.Applet;
+public class TextFieldPuzzles extends Applet implements ActionListener
+{
+ 
+  public void init ()
+  { 
+    resize (800, 670);
+    picture = new JLabel (createImageIcon ("paintThief.jpg"));
+    JLabel instruct = new JLabel ("Thief's Colour:");
+    instruct.setFont (new Font ("Comic Sans MS", Font.PLAIN, 15));
+    JTextField text = new JTextField (5);
+    JButton b1 = new JButton ("Done");
+    b1.setForeground (Color.yellow);
+    b1.setBackground (Color.black);
+                      
+    }
+  public void actionPerformed (ActionEvent e)
+  {
+    
+  }
+}

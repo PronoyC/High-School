@@ -1,0 +1,51 @@
+//Name: Lockers.java
+//Date: June 4th, 2015
+//Author: Pronoy Chaudhuri
+//Description: Time to lock shop up!
+public class Lockers
+{
+  public static void main (String args[])
+  {
+    new Lockers ();
+  }
+  
+  
+  public Lockers ()
+  {
+    int combin [] = new int [12];
+    String first [] = new String [12];
+    String last [] = new String [12];
+    
+    char choice = 'e';
+    while (choice != 'q')
+    {
+      System.out.println ("What would you like to do?");
+      System.out.println ("(a) give out a locker");
+      System.out.println ("(b) print out all lockers");
+      System.out.println ("(c) find out how many lockers are left");
+      System.out.println ("(q) quit");
+      choice = IBIO.inputChar (">> ");
+      if (choice == 'a')
+        giveOutLocker (combin, first, last);
+      else if (choice == 'b')
+        printOutAllLockers (combin, first, last);
+      else if (choice == 'c')
+        findHowMany (combin, first, last);
+    }
+  }
+  public void giveOutLocker (int combin[], String first[], String last[])
+  {
+    System.out.println ("\n************Give out a Locker************\n");
+    int num = IBIO.inputInt ("Which locker number would you like? ");
+    combin [num] = ("What is the combination? (no dashes only #s) ");
+    first [num] = IBIO.inputString ("What is the first name? ");
+    last [num] = IBIO.inputString ("What is the last name? ");
+  }
+  public void printOutAllLockers (int combin[], String first[], String last[])
+  {
+    System.out.println ("\n
+  }
+  public void findHowMany (int combin[], String first[], String last[])
+  {
+  }
+}

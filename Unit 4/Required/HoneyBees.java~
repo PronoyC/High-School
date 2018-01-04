@@ -1,0 +1,24 @@
+//Name: HoneyBees.java
+//Date: June 2nd, 2015
+//Author: Pronoy Chaudhuri
+//Description: Time to save the environment!
+public class HoneyBees
+{
+  public static void main (String args[])
+  {
+    new HoneyBees ();
+  }
+  
+  
+  public HoneyBees ()
+  {
+    int bees [] = {95, 92, 93, 95, 92, 100, 89, 83, 88, 89, 88, 89, 87, 95, 95, 92, 101, 78, 79, 82, 83, 95, 88, 90, 91, 89, 85, 82, 81, 94, 94, 95, 96, 97, 98, 95, 98, 103, 95, 91, 96, 93, 82, 95, 88, 89, 90};
+  System.out.println ("A count of the number of bees");
+    int s = 0;    
+    for (int i = 0 ; i < bees.length ; i++)
+    {
+      s += bees [i];
+    }
+    System.out.println ("\nThe sum is " + s);
+  }
+}

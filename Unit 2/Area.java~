@@ -1,0 +1,95 @@
+//Fill in the methods at the bottom to make the program run correctly
+
+public class Area
+{
+  public static void main (String args[])
+  {
+    new Area ();
+  }
+  
+  
+  public Area ()
+  {
+    char more = 'y';
+    
+    while (more == 'Y' || more == 'y')
+    {
+      printmenu ();
+      int answer = IBIO.inputInt ("Which object do you have? (1-5) ");
+      double area = -1;
+      if (answer == 1)
+        area = circle ();
+      else if (answer == 2)
+        area = rectangle ();
+      else if (answer == 3)
+        area = triangle ();
+      else if (answer == 4)
+        area = square ();
+      else if (answer == 5)
+        area = sphere ();
+      
+      if (area == -1)
+        System.out.println ("You must choose 1 to 5.");
+      else
+        System.out.println ("The area is " + area);
+      
+      System.out.println ("");
+      more = IBIO.inputChar ("Do you want to find the area of anything else? (y/n) ");
+    } //while
+    
+    System.out.println ("Goodbye!");
+  } //constructor
+  
+  
+  public void printmenu ()
+  {
+    /*Add the Code to print the menu:
+     *** Menu ***
+     1. circle
+     2. rectangle
+     3. triangle
+     4. square
+     5. sphere
+     */
+  }
+  
+  
+  public double circle ()
+  { //Code to get info needed and calculate area of a circle
+    
+    //change the return line to return the area you calculated
+    return 0;
+  } //circle
+  
+  
+  public double rectangle ()
+  { //Code to get info needed and calculate area of a rectangle
+    
+    //change the return line to return the area you calculated
+    return 0;
+  } //rectangle
+  
+  
+  public double triangle ()
+  { //Code to get info needed and calculate area of a triangle
+    
+    //change the return line to return the area you calculated
+    return 0;
+  } //triangle
+  
+  
+  public double square ()
+  { //Code to get info needed and calculate area of a square
+    
+    //change the return line to return the area you calculated
+    return 0;
+  } //square
+  
+  
+  public double sphere ()
+  { //Code to get info needed and calculate surface area of a sphere
+    
+    //change the return line to return the surface area you calculated
+    return 0;
+  } //sphere
+} //class

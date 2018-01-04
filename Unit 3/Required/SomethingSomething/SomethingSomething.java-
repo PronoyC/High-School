@@ -1,0 +1,20 @@
+//File: SomethingSomething.java
+//Author: Pronoy Chaudhuri
+//Date: April 22nd, 2015
+//Description: You know, just a something-something.
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.Applet;
+public class SomethingSomething extends Applet implements ActionListener
+{
+    
+  public void init ()
+  { 
+        
+  }
+  public void actionPerformed (ActionEvent e)
+  {
+    
+  }
+}

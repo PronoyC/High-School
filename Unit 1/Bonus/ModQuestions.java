@@ -1,0 +1,106 @@
+//File: ModQuestions.java
+//Author: Pronoy Chaudhuri
+//Date: February 14th, 2015
+//Description: Satisfaction with some modified action.
+public class ModQuestions
+{
+ public static void main (String args[])
+ {
+ new ModQuestions ();
+ }
+ public ModQuestions ()
+ {
+ System.out.println ("Question 0\n");
+ int n = IBIO.inputInt ("Enter the number of cents: ");
+ if (n < 200)
+ System.out.print ("");
+ else if (n >= 200 && n < 300)
+ System.out.println ("That is 1 toonie.");
+ else   
+ System.out.println ("That is " + (n / 200) + " toonies.");
+ n = n % 200;
+ if (n < 100)
+ System.out.print ("");
+ else if (n >= 100 && n < 200)
+ System.out.println ("That is 1 loonie.");
+ else
+ System.out.println ("That is " + (n / 100) + " loonies.");
+ n = n % 100;
+ if (n < 25)
+ System.out.print ("");
+ else if (n >= 25 && n < 50)
+ System.out.println ("That is 1 quarter.");
+ else
+ System.out.println ("That is " + (n / 25) + " quarters.");
+ n = n % 25;
+ if (n < 10)
+ System.out.print ("");
+ else if (n >= 10 && n < 20)
+ System.out.println ("That is 1 dime.");
+ else
+ System.out.println ("That is " + (n / 10) + " dimes.");
+ n = n % 10;
+ if (n < 5)
+ System.out.print ("");
+ else if (n >= 5 && n <10)
+ System.out.println ("That is 1 nickel.");
+ else
+ System.out.println ("That is " + (n / 5) + " nickels.");
+ n = n % 5;
+ if (n < 1)
+ System.out.print ("");
+ else if (n >= 1 && n < 2)
+ System.out.println ("That is 1 penny.");
+ else
+ System.out.println ("That is " + (n) + " pennies.");
+ System.out.println ("");
+ 
+ System.out.println ("Question 1\n");
+ int gym = IBIO.inputInt ("Enter the number of players: ");
+ if (gym%7 == 1)
+ System.out.println ("There will be " +(gym/7)+ " teams with 1 player left over.");
+ else if (gym >= 7 && gym < 14)
+ System.out.println ("There will be 1 team with " +(gym%7)+ " players left over.");
+ else
+ System.out.println ("There will be " +(gym/7)+ " teams with " +(gym%7)+ " players left over.");
+ System.out.println ("");
+
+ System.out.println ("Question 2\n");
+ int minutes = IBIO.inputInt ("Enter the number of minutes: ");
+ if (minutes < 60 && (minutes%60) < 10)
+ System.out.println ("This is 00:0" +(minutes%60));
+ else if (minutes < 60)
+ System.out.println ("This is 00:" +(minutes%60));
+ else if ((minutes%60) < 10)
+ System.out.println ("This is " +(minutes/60)+ ":0" +(minutes%60));
+ else
+ System.out.println ("This is " +(minutes/60)+ ":" +(minutes%60));
+ System.out.println ("");
+
+ System.out.println ("Question 3\n");
+ int numfl = IBIO.inputInt ("Enter the number of flower pots to ship: ");
+ System.out.println ("We will ship: ");
+ if ((numfl/9) >= 1)
+ System.out.println (+(numfl/9)+ " very big box(es)");
+ int one = numfl/9;
+ numfl = numfl % 9;
+ if ((numfl/4) >= 1)
+ System.out.println (+(numfl/4)+ " big box(es)");
+ int two = numfl/4;
+ numfl = numfl % 4;
+ if (numfl >= 1)
+ System.out.println (+((numfl)-(numfl/9)+(numfl/4))+ " box(es)");
+ int three = ((numfl)-(numfl/9)+(numfl/4));
+ System.out.println ("This is a total of " +(one+two+three)+ " boxes");
+ //unsolved - remember to CHECK!!!!
+ System.out.println ("");
+ 
+ System.out.println ("Question 4\n");
+ int number = IBIO.inputInt ("Enter a three-digit number: ");  
+ System.out.println ("The first digit is " +(number/100)+ ".");
+ System.out.println ("The second digit is " +((number/10-(number/100)*10))+ ".");
+ System.out.println ("The third digit is " +(number-((number/100)*100)-((number/10-(number/100)*10)*10))+ ".");
+ System.out.println ("The sum of the digits is " +((number/100)+(number/10-(number/100)*10)+(number-((number/100)*100)-((number/10-(number/100)*10)*10)))+ ".");
+ }
+}
+                       

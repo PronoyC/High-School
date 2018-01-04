@@ -1,0 +1,36 @@
+//Name: Palindrome.java
+//Date: June 8th, 2015
+//Author: Pronoy Chaudhuri
+//Description: Racecar!
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class Palindrome
+{
+  public static void main (String args[])
+  {
+    new Palindrome();
+  }
+  public Palindrome()
+  {
+    Scanner in=new Scanner (System.in);
+    System.out.println("********************");
+    System.out.println("*Palindrome Checker*");
+    System.out.println("********************");
+    String word = IBIO.inputString("\nEnter any phrase: ");    
+    String[] convert = word.split("(?i)x");
+    String[] verify = new String[convert.length];
+    System.arraycopy(convert, 0, verify, 0, (convert.length));
+    String rever[] = new String[verify.length];
+    for(int i = 0; i < verify.length; i++)
+    {
+      rever[i]=verify[(verify.length-1)-i];
+    }
+    if (Arrays.equals(verify, rever)==true)
+      System.out.println("True");
+    else
+      System.out.println("False");
+    
+  }
+}

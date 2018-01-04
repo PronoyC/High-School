@@ -1,0 +1,37 @@
+//File: Penguin.java
+//Author: Pronoy Chaudhuri
+//Date: April 22nd, 2015
+//Description: Learn to draw!
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import java.applet.Applet;
+
+public class Penguin extends Applet implements ActionListener
+{
+  JButton b1;
+  JButton b2;
+    
+  public void init ()
+  {
+    JLabel title = new JLabel ("Draw a Penguin");
+    title.setFont (new Font ("Arial", FONT.BOLD, 20));
+    JLabel picture = new JLabel (createImageIcon ("FriendPhotoImage.png"));               
+  }
+  
+   public void actionPerformed (ActionEvent e)
+  {
+    
+  }
+   
+    protected static ImageIcon createImageIcon (String path)
+  {
+    java.net.URL imgURL = Dice.class.getResource (path);
+    if (imgURL != null)
+      return new ImageIcon (imgURL);
+    else
+    {
+      System.err.println ("Couldn't find file: " + path);
+      return null;
+    }
+  }

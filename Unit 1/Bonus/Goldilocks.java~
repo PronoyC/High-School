@@ -1,0 +1,12 @@
+//File: FruitPop.java
+//Author: Pronoy Chaudhuri
+//Date: February 10th, 2015
+//Description: Fruit? Why didn't you say so?
+public class FruitPop
+{
+ public static void main (String args[])
+ {
+ new FruitPop ();
+ }
+ public FruitPop ()
+ {

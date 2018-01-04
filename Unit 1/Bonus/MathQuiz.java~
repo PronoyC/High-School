@@ -1,0 +1,14 @@
+//File: MathQuiz.java
+//Author: Pronoy Chaudhuri
+//Date: February 14th, 2015
+//Description: Time to go back to Math class :D
+public class MathQuiz
+{
+ public static void main (String args[])
+ {
+ new MathQuiz ();
+ }
+ public MathQuiz ()
+ {
+ }
+}

@@ -1,0 +1,100 @@
+//File: Song.java
+//Author: Pronoy Chaudhuri
+//Date: March 12th, 2015
+//Description: Jiggle Bells! Oh wait, that's not right...
+public class Song
+{
+ public static void main (String args[])
+ {
+ new Song ();
+ }
+ public Song ()
+ {
+   System.out.println ("*12 Days of Christmas*");
+   for (int j = 1; j<=12; j++)
+   {
+     System.out.println ("On the "+num+" day of Christmas, my true love gave to me...");
+     if (j==1)
+       String num = ("first");
+     else if (j==2)
+       String num = ("second");
+     else if (j==3)
+       String num = ("third");
+     else if (j==4)
+       String num = ("fourth");
+     else if (j==5)
+       String num = ("fifth");
+     else if (j==6)
+       String num = ("sixth");
+     else if (j==7)
+       String num = ("seventh");
+     else if (j==8)
+       String num = ("eighth");
+     else if (j==9)
+       String num = ("ninth");
+     else if (j==10)
+       String num = ("tenth");
+     else if (j==11)
+       String num = ("eleventh");
+     else
+       String num = ("twelfth");
+   for (int i = 1; i<=12; i++)
+   {
+     if (i==1)
+     {
+       System.out.println ("A Partridge in a Pear Tree.\n");      
+       System.out.println (" _");
+       System.out.println (" ('>");
+       System.out.println (" /))@@@@@");
+       System.out.println (" /@\"@@@@@()@");
+       System.out.println (" @@()@@()@@@@");
+       System.out.println ("@@@O@@@@()@@@");
+       System.out.println ("@()@@\@@@()@@");
+       System.out.println (" @()@||@@@@@");
+       System.out.println (" @@||@@@");
+       System.out.println (" ||");
+       System.out.println (" ^^^^^^^^^^^^^^^^^");
+     }
+     else 
+     {
+       System.out.println ("And a Partridge in a Pear Tree.\n");
+       System.out.println (" _");
+       System.out.println (" ('>");
+       System.out.println (" /))@@@@@");
+       System.out.println (" /@\"@@@@@()@");
+       System.out.println (" @@()@@()@@@@");
+       System.out.println ("@@@O@@@@()@@@");
+       System.out.println ("@()@@\@@@()@@");
+       System.out.println (" @()@||@@@@@");
+       System.out.println (" @@||@@@");
+       System.out.println (" ||");
+       System.out.println (" ^^^^^^^^^^^^^^^^^\n");
+     }
+     if (i>=2)
+     {
+       System.out.println ("2 Turtle Doves \n");
+       System.out.println ("<')_,/ <') ,/");
+       System.out.println ("(_==/ (_==/");
+       System.out.println (" ='- ='-\n"); 
+     }
+     if (i>=3)
+     {
+       System.out.println ("3 French Hens \n");
+       System.out.println ("     (\ }\ (\ }\ (\ }\ ");
+       System.out.println (" ( \_('> ( \_('> ( \_('>");
+       System.out.println (" (__(=_) (__(=_) (__(=_)");
+       System.out.println (" -\"= -\"= -\"=\n");
+     }
+     if (i>=4)
+     {
+       System.out.println ("4 Calling Birds");
+       System.out.println ("  ___   ___   ___   ___");
+       System.out.println (" ('v') ('v') ('v') ('v')");
+       System.out.println (" (( )) (( )) (( )) (( ))");
+       System.out.println (" -/-\"---\"---/-\"---\"---/-\"---\"---/-\"---\"-\n");
+     }
+     if (i>=5)
+       System.out.println ("5 Golden Rings");
+       
+         
+       

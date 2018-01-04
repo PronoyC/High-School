@@ -1,0 +1,67 @@
+public class Trident
+{
+  public static void main (String args[])
+  {
+    new Trident ();
+  }
+  public Trident ()
+  {
+    System.out.println ("**Welcome to my Trident Program!**");
+    System.out.println ("\nYou want tridents, we make them tridents!");    
+    char continu = 'y';
+    while (continu == 'y')
+    {
+      int t = IBIO.inputInt ("Enter tine length >> ");
+      int s = IBIO.inputInt ("Enter tine spacing >> ");
+      int h = IBIO.inputInt ("Enter handle length >> ");
+      int num1 = (s * 2) + 3;
+      
+      for (int c = 1 ; c <= t ; c++)
+      {
+        System.out.print ("*");
+        for (int d = 1 ; d <= s ; d++)
+        {
+          System.out.print (" ");
+        }
+        System.out.print ("*");
+        for (int d = 1 ; d <= s ; d++)
+        {
+          System.out.print (" ");
+        }
+        System.out.print ("*");
+        System.out.println ("");
+      }
+      
+      for (int a = 1 ; a <= num1 ; a++)
+      {
+        System.out.print ("*");
+      }
+      System.out.println ("");
+      
+      int middle = (num1 / 2) + 1;
+      
+      for (int e = 1 ; e <= h ; e++)
+      {
+        for (int f = 1 ; f <= (middle - 1) ; f++)
+        {
+          System.out.print (" ");
+        }
+        System.out.print ("*");
+        System.out.println (" ");
+      }
+      
+      continu = IBIO.inputChar ("Make another trident? (y/n)");
+    }
+    
+    
+    System.out.print ("Thanks for making tridents! ");
+    
+    
+    
+    
+    
+  }
+}
+
+
+

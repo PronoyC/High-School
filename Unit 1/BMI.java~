@@ -1,0 +1,30 @@
+//File: BMI.java
+//Author: Pronoy Chaudhuri
+//Date: February 10th, 2015
+//Description: An easy way to assess your health using the Body Mass Index (BMI).
+public class BMI
+{
+ public static void main (String args[])
+ {
+ new BMI ();
+ }
+ public BMI ()
+ {
+   System.out.println ("*****************");
+   System.out.println ("* BMI Calculator*");
+   System.out.println ("*****************");
+   System.out.println ("");
+   double w = IBIO.inputDouble ("Enter weight (kg): ");
+   double h = IBIO.inputDouble ("Enter height (m): ");
+   System.out.println ("");
+ if ((w/(h*h))>25)
+   System.out.println ("Overweight");
+ else if ((w/(h*h))<18.5)
+   System.out.println ("Underweight");
+ else if (((w/h*h) >= 18.5) || (25 >= (w/h*h)))
+   System.out.println ("Normal weight");
+                         
+}
+}
+                        
+                   

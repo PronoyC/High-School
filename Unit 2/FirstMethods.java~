@@ -1,0 +1,65 @@
+//At the bottom of this class are a series of methods
+//Fill them in, according to their instructions.
+//Run them as you go, to verify if they are working.
+
+public class FirstMethods
+{
+  public static void main (String args[])
+  {
+    new FirstMethods ();
+  }
+  
+  
+  public FirstMethods ()
+  {
+    square ();
+    blank ();
+    circle ();
+    blank ();
+    bunny ();
+    blank ();
+    line ();
+    blank ();
+    count ();
+    blank ();
+    signature ();
+  }
+  
+  
+  public void blank ()
+  { //fill in the code to make a blank line on the screen.
+  }
+  
+  
+  public void square ()
+  { //fill in the code to make an ASCII square here.
+  }
+  
+  
+  public void circle ()
+  { //fill in the code to make an ASCII square here.
+  }
+  
+  
+  public void bunny ()
+  { //fill in the code to make an ASCII bunny here.
+  }
+  
+  
+  public void line ()
+  { //use a loop to make a line of stars * here.
+  }
+  
+  
+  public void count ()
+  { //use a loop to count from 1 to 10 here.
+  }
+  
+  
+  public void signature ()
+  { //make a "signature" for yourself
+    //list a title - eg. "IB Student at Turner Fenton"
+    //pick a quote to follow it
+    
+  }
+}

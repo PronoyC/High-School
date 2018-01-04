@@ -1,0 +1,39 @@
+//File: FruitPop.java
+//Author: Pronoy Chaudhuri
+//Date: February 10th, 2015
+//Description: Fruit? Why didn't you say so?
+public class FruitPop
+{
+ public static void main (String args[])
+ {
+ new FruitPop ();
+ }
+ public FruitPop ()
+ {
+   System.out.println ("Welcome to Fruit Pop ICS208 version!");
+   System.out.println ("");
+   int points = IBIO.inputInt ("How many points do you have? ");
+   System.out.println ("Your screen can have these icons: ");
+   if (points >= 10)
+     System.out.print ("Apple, ");
+   if (points >= 0)
+     System.out.print ("Blueberry, ");
+   if (points > 2000 && points < 3000)
+     System.out.print ("Coin, ");
+   if (points > 2000)
+     System.out.print ("Extra Time, ");
+   if (points < 400 || points > 1000)
+     System.out.print ("Heart, ");
+   if (points < 1500)
+     System.out.print ("Lemon, ");
+   if (points > 50 || points < 2000)
+     System.out.print ("Lime, ");
+   if (points > 100)
+     System.out.print ("Orange, ");
+   if (points > 0)
+     System.out.print ("Plum, ");
+   if (points > 1500)
+     System.out.print ("Robot, ");      
+   System.out.println ("");
+ }
+}

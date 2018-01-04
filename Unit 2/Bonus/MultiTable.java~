@@ -1,0 +1,15 @@
+//File: MultiTable.java
+//Author: Pronoy Chaudhuri
+//Date: March 5th, 2015
+//Description: Who needs any polygon when you have squares?
+public class MultiTable
+{
+  public static void main (String args[])
+  {
+    new MultiTable ();
+  }
+  public MultiTable ()
+  {
+    System.out.println ("WIP");
+  }
+}

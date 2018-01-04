@@ -1,0 +1,48 @@
+//File: Temperature.java
+//Author: Pronoy Chaudhuri
+//Date: February 11th, 2015
+//Description: A quick way to find your average.
+public class Temperature
+{
+ public static void main (String args[])
+ {
+ new Temperature ();
+ }
+ public Temperature ()
+ {
+   string month = IBIO.inputString ("Which season would you like? (spring/summer/fall/winter) ");
+   System.out.println ("");
+   if (month == spring)
+     string month = spring;
+   else if (month == summer)
+     string month = summer;
+   else if (month == fall)
+     string month = fall;
+   else if (month == winter)
+     string month = winter;
+   else
+   {
+     System.out.println ("Sorry that is not an option. Please try again.");
+     string month = IBIO.inputString ("Which season would you like? (spring/summer/fall/winter) ");
+   }
+   string mon1 = IBIO.inputString ("What is the name of the first " +month+ " month?");
+   string mon2 = IBIO.inputString ("What is the name of the second " +month+ " month?");
+   string mon3 = IBIO.inputString ("What is the name of the third " +month+ " month?");
+   System.out.println ("");
+   if (mon1 && mon2 && mon3 != January || February || March || April || May || June || July || August || September || October || November || December)
+   {
+     System.out.println ("Sorry, one or more of your inputs are not correct. Please retype your months.");
+     System.out.println ("Note: Make sure the first letter of your month is a CAPITAL.");
+     System.out.println ("");
+     string mon1 = IBIO.inputString ("What is the name of the first " +month+ " month?");
+     string mon2 = IBIO.inputString ("What is the name of the second " +month+ " month?");
+     string mon3 = IBIO.inputString ("What is the name of the third " +month+ " month?");   
+   }
+   double temp1 = IBIO.inputDouble ("What is the average temperature in " +mon1+ " (in degrees)? ");
+   double temp2 = IBIO.inputDouble ("What is the average temperature in " +mon2+ " (in degrees)? ");
+   double temp3 = IBIO.inputDouble ("What is the average temperature in " +mon3+ " (in degrees)? ");
+   System.out.println ("");
+   System.out.println ("The average temperature in the " +month+ " was: " +((temp1+temp2+temp3)/3)+ "mL");
+ }
+}
+   

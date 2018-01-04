@@ -1,0 +1,46 @@
+//File: Store.java
+//Author: Pronoy Chaudhuri
+//Date: February 9th, 2015
+//Description: The sad little store.
+public class Store
+{
+ public static void main (String args[])
+ {
+ new Store ();
+ }
+ public Store ()
+ {
+   System.out.println ("***********************************");
+   System.out.println ("* Welcome to Jeff's Grocery Store *");
+   System.out.println ("***********************************");
+   System.out.println ("");
+   System.out.println ("Enter the amount of each thing you would like to buy.");
+   int ban = IBIO.inputInt ("1. How many bananas would you like? ");
+   int app = IBIO.inputInt ("2. How many apples would you like? ");
+   int pear = IBIO.inputInt ("3. How many pears would you like? ");
+   int plum = IBIO.inputInt ("4. How many plums would you like? ");
+   int chips = IBIO.inputInt ("5. How many bags of chips would you like? ");
+   System.out.println ("");
+   System.out.println ("***********************************");
+   System.out.println ("*     Jeff's Grocery Store Bill   *");
+   System.out.println ("***********************************");
+   System.out.println ("");
+   System.out.println (ban+ " bananas @ $1.00 = $" +(ban*1.00));
+   System.out.println (app+ " apples @ $0.90 = $" +(app*0.90));
+   System.out.println (pear+ " pears @ $0.60 = $" +(pear*0.60));
+   System.out.println (plum+ " plums @ $1.25 = $" +(plum*1.25));
+   System.out.println (chips+ " chips @ $1.50 = $" +(chips*1.50));
+   System.out.println ("");
+   System.out.println ("Subtotal: $" +(ban+app+pear+plum+chips));
+   System.out.println ("Tax: $" +(ban+app+pear+plum+chips)*.13);
+   System.out.println ("Total: $" +((ban+app+pear+plum+chips)*1.13));
+   System.out.println ("");
+   Double total = IBIO.inputDouble ("Enter the amount of money paid: $");
+   if ((total) == ((ban+app+pear+plum+chips)*1.13))
+     System.out.println ("Thank you, and have a good day!");
+   if ((total) < ((ban+app+pear+plum+chips)*1.13))
+  System.out.println ("That is not enough. You need an additional $" +(((ban+app+pear+plum+chips)*1.13)-total));
+   if ((total) > (((ban+app+pear+plum+chips)*1.13)))
+         System.out.println ("That is more than enough. I will give you exactly $" +(total-((ban+app+pear+plum+chips)*1.13)));
+ }
+}

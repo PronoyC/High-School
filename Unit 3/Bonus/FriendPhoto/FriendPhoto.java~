@@ -1,0 +1,102 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import java.applet.Applet;
+
+public class FriendPhoto extends Applet implements ActionListener
+{
+  JButton b1;
+  JButton b2;
+  JButton b3;
+  JButton b4;
+  
+  public void init ()
+  {
+    resize (600,500);
+    
+    JLabel photo = new JLabel ("Friend Photo");
+    
+    JTextArea TA = new JTextArea (5, 15);
+    TA.setText ("Lucia and her friends are of an on-line social network \n");
+    TA.append ("Below is a diagram describing the relationship among Lucia\n");
+    TA.append ("and her friends. Each line indicates a friendship \n");
+    
+    JLabel photo1 = new JLabel (createImageIcon ("FriendPhotoImage.png"));
+    
+    JTextArea Ta = new JTextArea ("Lucia sends a photo to some of her friends.\n");
+    Ta.setText ("Each of those friends sends the photo to all of their friends \n");
+    Ta.setText ("Which of the following groups of friends can Lucia send her photo");
+    Ta.setText ("to so that Jacob is not sent the photo?");
+    
+    b1 = new JButton ("Dana, Michael, Eve");
+    b1.setActionCommand ("1");
+    b1.addActionListener (this);
+    b1.setBackground (Color.gray);
+    b1.setForeground (Color.black);
+    
+    b2 = new JButton ("Dana, Eve, Monica");
+    b2.setActionCommand ("2");
+    b2.addActionListener (this);
+    b2.setBackground (Color.gray);
+    b2.setForeground (Color.black);
+ 
+    b3 = new JButton ("Michael, Eve, Jacob");
+    b3.setActionCommand ("3");
+    b3.addActionListener (this);
+    b3.setBackground (Color.gray);
+    b3.setForeground (Color.black);
+    
+    b4 = new JButton ("Michael, Peter, Monica");
+    b4.setActionCommand ("4");
+    b4.addActionListener (this);
+    b4.setBackground (Color.gray);
+    b4.setForeground (Color.black);
+    
+    add (TA);
+    add (photo1);
+    add (Ta);
+    
+    Panel p = new Panel (new GridLayout (4, 1));
+    p.add (b1);
+    p.add (b2);
+    p.add (b3);
+    p.add (b4);
+    add (p);
+  }
+  
+  
+  public void actionPerformed (ActionEvent e)
+  {
+    showStatus("Incorrect");
+    if (e.getActionCommand ().equals ("1"))
+    {
+      b1.setText ("CORRECT");
+      showStatus ("Correct");
+    }
+    if (e.getActionCommand ().equals ("2"))
+    {
+      b2.setText ("Sorry that's incorrect.");
+    }
+    if (e.getActionCommand ().equals ("3"))
+    {
+      b3.setText ("Sorry that's incorrect.");
+    }
+    if (e.getActionCommand ().equals ("4"))
+    {
+      b4.setText ("Sorry that's incorrect.");
+    }
+  }
+  
+  
+  protected static ImageIcon createImageIcon (String path)
+  {
+    java.net.URL imgURL = FriendPhoto.class.getResource (path);
+    if (imgURL != null)
+      return new ImageIcon (imgURL);
+    else
+    {
+      System.out.println ("Couldn't find the file " + path);
+      return null;
+    }
+  }
+}

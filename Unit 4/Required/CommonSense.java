@@ -1,0 +1,85 @@
+//Name: CommonSense.java
+//Date: June 2nd, 2015
+//Author: Pronoy Chaudhuri
+//Description: Common sense ain't that common anymore...
+public class CommonSense
+{
+  public static void main (String args[])
+  {
+    new CommonSense ();
+  }
+  
+  
+  public CommonSense ()
+  {
+    System.out.println ("Days of the Week\n");
+    
+    String week[] = {"Sunday", "Monday", "Tuesday", "Wednesday",
+      "Thursday", "Friday", "Saturday"};
+    for (int i = 0 ; i < week.length ; i++)
+      System.out.print (week [i] + " ");
+    System.out.println ("\n");
+    
+    System.out.println ("Roman Numerals\n");
+    
+    String roman[] = {"I", "II", "III", "IV",
+      "V", "VI", "VII", "VIII", "IX", "X"};
+    for (int i = 0 ; i < roman.length ; i++)
+      System.out.print (roman [i] + " ");
+    System.out.println ("\n");
+    
+    System.out.println ("Fibonacci Sequence\n");
+    
+    int fib[] = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55};
+    for (int i = 0 ; i < fib.length ; i++)
+      System.out.print (fib [i] + " ");
+    System.out.println ("\n");
+    
+    System.out.println ("Rainbow Colours\n");
+    
+    String rain[] = {"Red", "Orange", "Yellow", "Green",
+      "Blue", "Indigo", "Violet"};
+    for (int i = 0 ; i < rain.length ; i++)
+      System.out.print (rain [i] + " ");
+    System.out.println ("\n");
+    
+    System.out.println ("Counting Words\n");
+    
+    String words[] = {"Zero", "One", "Two", "Three",
+      "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"};
+    for (int i = 0 ; i < words.length ; i++)
+      System.out.print (words [i] + " ");
+    System.out.println ("\n");
+    
+    System.out.println ("Head & Shoulders Words\n");
+    
+    String hs[] = {"Head", "Shoulders", "Knees", "Toes",
+      "Eyes", "Ears", "Mouth", "Nose"};
+    for (int i = 0 ; i < hs.length ; i++)
+      System.out.print (hs [i] + " ");
+    System.out.println ("\n");
+    
+    System.out.println ("Period start times\n");
+    
+    String per[] = {"8:15", "9:40", "10:59", "12:14",
+      "1:33"};
+    for (int i = 0 ; i < per.length ; i++)
+      System.out.print (per [i] + " ");
+    System.out.println ("\n");
+    
+    System.out.println ("Powers\n");
+    
+    int pow[] = {1, 4, 9, 16, 25, 36, 49, 64, 81, 100};
+    for (int i = 0 ; i < pow.length ; i++)
+      System.out.print (pow [i] + " ");
+    System.out.println ("\n");
+    
+    System.out.println ("Start of Alphabet\n");
+    
+    char alp[] = {'a', 'b', 'c', 'd',
+      'e', 'f', 'g', 'h', 'i'};
+    for (int i = 0 ; i < alp.length ; i++)
+      System.out.print (alp [i] + " ");
+    System.out.println ("");
+  }
+}

@@ -1,0 +1,44 @@
+//File: CherryStones.java
+//Author: Pronoy Chaudhuri
+//Date: March 12th, 2015
+//Description: Wait, cherries have stones?!
+public class CherryStones
+{
+  public static void main (String args[])
+  {
+    new CherryStones ();
+  }   
+  public CherryStones ()
+  {
+    int num = (int) (Math.random () *35) + 10;
+    for (int i = 1 ; i <=num ; i++)
+    {
+      if (i % 7 == 0)
+        System.out.println ("Athlete");
+      else if (i % 7 == 1)
+        System.out.println ("President");
+      else if (i % 7 == 2)
+        System.out.println ("Scientist");
+      else if (i % 7 == 3)
+        System.out.println ("Rich");
+      else if (i % 7 == 4)
+        System.out.println ("Gambler");
+      else if (i % 7 == 5)
+        System.out.println ("CEO");
+      else 
+        System.out.println ("Thug");      
+      try
+      {
+        Thread.sleep (100);
+      }
+      catch (InterruptedException m)
+      {
+        ;
+      }
+      
+    }
+  }
+}
+
+
+

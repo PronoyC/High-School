@@ -1,0 +1,44 @@
+//File: RockPaperScissors.java
+//Author: Pronoy Chaudhuri
+//Date: April 22nd, 2015
+//Description: All you need is a bit of luck!
+import java.awt.*; 
+import java.awt.event.*; 
+import javax.swing.*; 
+import java.applet.*;
+
+public class RockPaperScissors extends Applet implements ActionListener
+{
+  JButton bmine, next, bcomp;
+  JLabel action, score, pic, pic2;
+  int rps1=0;
+  int rps2=0;
+  int cscore=0;
+  int uscore=0;; 
+  public void init ()
+  {
+    JLabel title = new JLabel ("Paper, Scissors, Rock Game");
+    title.setFont (new Font ("Arial", Font.BOLD, 20));
+    title.setForeground (Color.red);
+    JLabel option = new JLabel ("Pick one:");
+    
+    Panel p = new Panel ();
+    p.add (option);
+    p.add (pic);
+    p.add (bmine);
+    p.setBackground (Color.green);
+    add (p);
+  }
+   public void actionPerformed (ActionEvent e)
+  {
+   }
+   protected static ImageIcon createImageIcon (String path)
+  { java.net.URL imgURL = HighRoller.class.getResource (path);
+    if (imgURL != null)
+      return new ImageIcon (imgURL);
+    else
+    { System.err.println ("Couldn't find file: " + path); 
+      return null;
+    }
+  }
+}

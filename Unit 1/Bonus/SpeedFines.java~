@@ -1,0 +1,14 @@
+//File: SpeedFines.java
+//Author: Pronoy Chaudhuri
+//Date: February 15th, 2015
+//Description: A quick way to identify potentially illegal alien immigrants.
+public class SpeedFines
+{
+ public static void main (String args[])
+ {
+ new SpeedFines ();
+ }
+ public SpeedFines ()
+ {
+ }
+}

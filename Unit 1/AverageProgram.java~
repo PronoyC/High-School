@@ -1,0 +1,21 @@
+//File: AverageProgram.java
+//Author: Pronoy Chaudhuri
+//Date: February 10th, 2015
+//Description: A quick way to find your average.
+public class AverageProgram
+{
+ public static void main (String args[])
+ {
+ new AverageProgram ();
+ }
+ public AverageProgram ()
+ {
+   System.out.println (" _______           _______  _______  _______  _______  _______ ");
+   System.out.println ("(  ___  )|\     /|(  ____ \(  ____ )(  ___  )(  ____ \(  ____ \");
+   System.out.println ("| (   ) || )   ( || (    \/| (    )|| (   ) || (    \/| (    \/");
+   System.out.println ("| (___) || |   | || (__    | (____)|| (___) || |      | (__    ");
+   System.out.println ("|  ___  |( (   ) )|  __)   |     __)|  ___  || | ____ |  __)   ");
+   System.out.println ("| (   ) | \ \_/ / | (      | (\ (   | (   ) || | \_  )| (      ");
+   System.out.println ("| )   ( |  \   /  | (____/\| ) \ \__| )   ( || (___) || (____/\");
+   System.out.println ("|/     \|   \_/   (_______/|/   \__/|/     \|(_______)(_______/");
+                         

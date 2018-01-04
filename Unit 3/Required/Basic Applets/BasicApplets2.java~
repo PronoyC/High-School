@@ -1,0 +1,48 @@
+//File: BasicApplets1.java
+//Author: Pronoy Chaudhuri
+//Date: April 22nd, 2015
+//Description: The basics to applets!
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.applet.Applet;
+public class BasicApplets2 extends Applet implements ActionListener
+{
+  JLabel tictac;
+  
+  public void init ()
+  {
+    resize (350,500);
+    JLabel title = new JLabel ("Tic-Tac-Toe!");
+    title.setFont (new Font ("Arial Black", Font.BOLD, 30));
+    add (title);
+    
+    JLabel subtitle = new JLabel ("X has the next move. Click in");
+    subtitle.setFont (new Font ("Arial", Font.BOLD, 14));
+    add (subtitle);
+   
+    JLabel subtitle2 = new JLabel ("the WORST place they could go.");
+    subtitle.setFont (new Font ("Arial", Font.BOLD, 14));
+    add (subtitle2);
+    
+    JLabel pass = new JLabel ("ertpuocm");
+    pass.setFont (new Font ("Arial", Font.BOLD, 20));
+    add (pass);
+    
+    JTextField field = new JTextField ("                            ");
+    add (field);
+        
+    JButton b1 = new JButton ("Done");
+    b1.setFont (new Font ("Arial", Font.BOLD, 18));
+    b1.setForeground (Color.yellow);
+    b1.setBackground (Color.magenta);
+    b1.addActionListener (this);
+    b1.setActionCommand ("check");
+    add (b1);
+    
+    setBackground(Color.orange);
+  }
+  public void actionPerformed (ActionEvent e)
+  {
+  }
+}
